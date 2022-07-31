@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "my-library",
+      "kind" : "localSourceControl",
+      "location" : "/Users/git/my-library",
+      "state" : {
+        "branch" : "master",
+        "revision" : "14bfaeb042b6fe5d1aece6194b63d76b745fd428"
+      }
+    }
+  ],
+  "version" : 2
+}
