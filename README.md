@@ -12,3 +12,19 @@ Building for debugging...
 Build complete! (0.06s)
 Hello, world!
 ```
+
+```shell
+$ make all
+git submodule update --init --recursive
+swift package update
+Updating /Users/git/my-app/my-library
+Updated /Users/git/my-app/my-library (0.02s)
+Everything is already up-to-date
+swift build -c release
+Building for production...
+Build complete! (0.10s)
+swift run -c release
+Building for production...
+Build complete! (0.05s)
+Hello, world!
+```
