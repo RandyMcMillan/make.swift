@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "my-app",
     dependencies: [
-        .package(url: "../my-library", branch: "master"),
+        .package(url: "my-library", branch: "master"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
