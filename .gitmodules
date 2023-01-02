@@ -1,4 +1,4 @@
 [submodule "my-library"]
 	path = my-library
 	url = https://github.com/RandyMcMillan/my-library.git
-	branch = master
+	branch = 4fa4d193c87076e1f0d7615f56fcec5f45b6c32e
