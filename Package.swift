@@ -12,7 +12,7 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "my-app",
+            name: "my-app.swift",
             targets: ["my-app"])////, "SomeRemoteBinaryPackage", "SomeLocalBinaryPackage"])
     ],
     dependencies: [
