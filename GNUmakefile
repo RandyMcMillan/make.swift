@@ -1,3 +1,4 @@
+export TOOLCHAINS=swift
 -:
 	swift run --build-tests
 
