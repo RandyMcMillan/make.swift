@@ -17,5 +17,5 @@ main:
 	chmod +x main
 run-main:
 	./main
-clean-main:
-	rm main
+clean-build:
+	rm -rf .build
