@@ -7,6 +7,10 @@ submodules:## git submodule update --init --recursive
 	git submodule update --init --recursive
 package-update:## swift packge update
 	swift package update
+build:
+	swift build
+run:
+	.build/debug/my-app
 build-release:## swift build -c release
 	swift build -c release
 run-release:## swift run -c release
