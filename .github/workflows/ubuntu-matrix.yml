@@ -31,19 +31,11 @@ jobs:
         with:
           access_token: ${{ github.token }}
       - uses: actions/checkout@v2
-      - name: printenv
+      - name: printenv & installs
         run: |
           printenv
+          if hash make; then make -v; else sudo apt-get automake; fi
+          if hash swift; then swift -version; else sudo apt-get swift; fi
       - name: make
         run: |
           make
-      - name: sudo make install
-        run: |
-          sudo make install
-      - name: man nostril
-        run: |
-          man nostril
-      - name: sudo -su runner nostril
-        run: |
-          #pipe handles non-zero return from nostril default help
-          sudo -su runner nostril        | echo "${PIPESTATUS[0]}"
