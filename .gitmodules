@@ -2,3 +2,7 @@
 	path = myLibrary
 	url = https://github.com/RandyMcMillan/myLibrary.swift.git
 	branch = master
+[submodule "ccurl"]
+	path = CCurl
+	url = git@github.com:RandyMcMillan/CCurl.git
+	branch = master

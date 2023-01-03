@@ -1,3 +1,5 @@
+import CCurl
+
 #if os(Linux)
 //import myLibrary
 
@@ -37,3 +39,14 @@ print("Hello, UIKit world!")
 #endif
 
 print("Hello, main.swift!")
+
+let handle = curl_easy_init()
+
+//curl_easy_setopt_string(handle, CURLOPT_URL, "http://www.example.com")
+//curl_easy_setopt_bool(handle, CURLOPT_VERBOSE, true)
+
+let ret = curl_easy_perform(handle)
+let error = curl_easy_strerror(ret)
+
+print("error = \(error)")
+print("ret = \(ret)")
