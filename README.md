@@ -1,30 +1,17 @@
-## my-app - swift app with make configuration
+## make.swift
 
-### install `brew` - [brew.sh](https://brew.sh)
-##### $`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-##### $`brew install make cmake ninja`
-##### $`brew install --cask swift`
+$```make``` 
 
 ```shell
-$ make
-swift run --build-tests
-Building for debugging...
-Build complete! (0.06s)
-Hello, world!
-```
+all             submodules package-update build-release run-release
+submodules      git submodule update --init --recursive
+package-update  swift packge update
+build-release   swift build -c release
+run-release     swift run -c release
+main            swiftc Sources/my-app/main.swift
+run-main        ./main
+clean-all       clean-package-resolved##clean-package-resolved
+clean-build     rm -rf .build
+clean-package-resolved clean-build rm -rf Package.resolved
 
-```shell
-$ make all
-git submodule update --init --recursive
-swift package update
-Updating /Users/git/my-app/my-library
-Updated /Users/git/my-app/my-library (0.02s)
-Everything is already up-to-date
-swift build -c release
-Building for production...
-Build complete! (0.10s)
-swift run -c release
-Building for production...
-Build complete! (0.05s)
-Hello, world!
 ```
