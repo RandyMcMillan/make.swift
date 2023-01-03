@@ -17,5 +17,8 @@ main:
 	chmod +x main
 run-main:
 	./main
+clean-all:clean-package-resolved
 clean-build:
 	rm -rf .build
+clean-package-resolved: clean-build
+	rm -rf Package.resolved
