@@ -16,7 +16,7 @@ main:## swiftc Sources/my-app/main.swift
 	chmod +x main
 run-main:## ./main
 	./main
-clean-all:## clean-package-resolved##clean-package-resolved
+clean-all:## clean-package-resolved
 clean-build:## rm -rf .build
 	rm -rf .build
 clean-package-resolved: clean-build## clean-build rm -rf Package.resolved
