@@ -1,4 +1,5 @@
 [submodule "myLibrary"]
 	path = myLibrary
-	url = https://github.com/RandyMcMillan/myLibrary.swift.git
+	url = git@github.com:randymcmillan/myLibrary.swift.git
 	branch = master
+	ignore = dirty
